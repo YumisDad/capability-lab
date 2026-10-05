@@ -41,7 +41,7 @@ adapters/
   codex/
 ```
 
-The canonical skill under `skills/` is the **sole editable authority**. Runtime-specific locations under `.claude/skills/` or `.codex/skills/` are installation targets, not separately maintained sources.
+The canonical skill under `skills/` is the **sole editable authority**. Runtime-specific locations under `.claude/skills/` or `.agents/skills/` for Codex are installation targets, not separately maintained sources. The original Codex adapter used `.codex/skills/`; the [2026-10-05 Codex runtime record](results/evidence-based-change-review/codex/2026-10-05.md) documents the observed discovery path and its limits.
 
 ## First experiment
 

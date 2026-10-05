@@ -1,0 +1,8 @@
+{
+  "test": "B2",
+  "phase": "missing-resource-control",
+  "originalHash": "CEAA260566F3581D1105A92E057A60CEF2FBD3EE8658567320E8D81631E56E6D",
+  "restoredHash": "CEAA260566F3581D1105A92E057A60CEF2FBD3EE8658567320E8D81631E56E6D",
+  "restored": true,
+  "coreRemainedAccessible": true
+}

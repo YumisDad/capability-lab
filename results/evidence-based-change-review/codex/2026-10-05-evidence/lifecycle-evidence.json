@@ -1,0 +1,34 @@
+{
+  "initialSourceCommit": "c3ad8d5b9323d06ef78482a24540b427dc2f9a56",
+  "update": {
+    "commit": "86297500e945aded238224ccad2b460e9010363d",
+    "sourceHash": "b08d72140de8a277dd09626b568c78b956227692b83b63bde2f63eac5de56125",
+    "installedHash": "b08d72140de8a277dd09626b568c78b956227692b83b63bde2f63eac5de56125",
+    "changedInstructionObservedInSuccessfulRead": true,
+    "labels": [
+      {
+        "label": "Installed configuration",
+        "initialResponse": false,
+        "updatedResponse": true
+      },
+      {
+        "label": "Observed effectiveness",
+        "initialResponse": false,
+        "updatedResponse": true
+      }
+    ]
+  },
+  "rollback": {
+    "commit": "440f3fc8e49133ba588765bdf9f7caa658a77e33",
+    "sourceHash": "6f20f47de351660123496150fa6a1eaa147c5d245439498db8a40ae04658feca",
+    "installedHash": "6f20f47de351660123496150fa6a1eaa147c5d245439498db8a40ae04658feca",
+    "temporaryInstructionAbsentInLoadedCore": true,
+    "coreReadSuccessful": true,
+    "labelsAbsentFromResponse": true,
+    "activationA1CoreRead": true,
+    "nonActivationN1NoCommands": true
+  },
+  "completedRuntimeSessions": 32,
+  "uniqueThreadIds": 32,
+  "allRuntimeProcessesExitedZero": true
+}

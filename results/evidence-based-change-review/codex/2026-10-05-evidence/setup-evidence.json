@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-05",
+  "runtime": "codex-cli 0.160.0",
+  "runtimeSurface": "fresh sequential non-interactive Codex CLI sessions launched from the desktop-managed environment",
+  "desktopBuild": "unknown; process file-version query returned no value",
+  "configuredModel": "gpt-6-astra",
+  "configuredReasoningEffort": "xhigh",
+  "modelQualification": "Read from top-level CLI configuration; JSON execution traces did not independently identify the served model. No model override was supplied.",
+  "branch": "experiment/evidence-based-change-review",
+  "initialCommit": "c3ad8d5b9323d06ef78482a24540b427dc2f9a56",
+  "initialWorkingTreeClean": true,
+  "initialSkillSha256": "6f20f47de351660123496150fa6a1eaa147c5d245439498db8a40ae04658feca",
+  "initialReferenceSha256": "ceaa260566f3581d1105a92e057a60cef2fbd3ee8658567320e8d81631e56e6d",
+  "installation": {
+    "mechanism": "Windows directory junction",
+    "exposure": ".agents/skills/evidence-based-change-review",
+    "authority": "skills/evidence-based-change-review",
+    "generatedCopy": false,
+    "tracked": false,
+    "localExclusion": ".git/info/exclude excludes /.agents/skills/",
+    "installedHashesMatchCanonical": true,
+    "discoveredInModelVisibleCatalog": true,
+    "diagnostic": "codex -C <REPO> -s read-only debug prompt-input 'Reply with READY.'",
+    "catalogEntry": "- evidence-based-change-review: Review proposed technical, workflow, operational, or system changes for objective fit, evidence quality, tradeoffs, failure modes, verification, and rollback. Use before implementing a consequential or non-trivial change. Do not use for ordinary coding, writing, or trivial reversible edits. (file: r4/evidence-based-change-review/SKILL.md)"
+  },
+  "documentedDiscovery": {
+    "source": "https://learn.chatgpt.com/docs/build-skills",
+    "accessed": "2026-10-05",
+    "claims": "Repository discovery under .agents/skills; symlinked skill folders supported.",
+    "qualification": "Junction discovery was exercised locally. Legacy .codex/skills compatibility was not tested. The original adapter named the legacy path."
+  },
+  "attempts": [
+    {
+      "action": "Clone specified branch with credential.helper disabled in managed shell",
+      "result": "Failed to connect to github.com port 443"
+    },
+    {
+      "action": "Retry same narrowly scoped clone outside managed shell restriction",
+      "result": "Succeeded; no credential files read or credential setup performed"
+    },
+    {
+      "action": "Local prompt diagnostic in managed shell",
+      "result": "WARNING: proceeding, even though we could not create PATH aliases: Could not find home directory; Error: Could not find home directory"
+    },
+    {
+      "action": "Retry local prompt diagnostic with normal host context and read-only Codex sandbox",
+      "result": "Succeeded; catalog before exposure lacked target skill"
+    },
+    {
+      "action": "Create relative Windows SymbolicLink at .agents/skills",
+      "result": "Administrator privilege required for this operation; no administrator permission requested"
+    },
+    {
+      "action": "Create Windows Junction at .agents/skills",
+      "result": "Succeeded; exposed file SHA-256 values matched source"
+    },
+    {
+      "action": "Prompt diagnostic after junction creation",
+      "result": "Target skill metadata present in model-visible catalog"
+    },
+    {
+      "action": "Start B1 after activation batch",
+      "result": "Runner rejected B1 as Unknown case ID before launching Codex because its behavior-section parser mishandled CRLF; parser fixed by line-ending normalization; scenario wording preserved"
+    }
+  ],
+  "runtimeWarnings": [
+    "ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/",
+    "ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/",
+    "Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell"
+  ],
+  "selectionRule": "A completed successful read of the target SKILL.md is loading evidence. A declaration without a successful read would be weaker evidence. Complete fresh-session traces without a target read or declaration are recorded as no observed invocation; this is not a claim about hidden model cognition.",
+  "safetyAndConfounds": "All runs use identical experiment boundaries, read-only tools, and no approval requests. Behavior runs explicitly name the skill; activation runs use exact prompts without naming it. Baseline behavior runs replace the explicit skill clause with a generic review request. The common untrusted-content boundary constrains B6 in both arms, so attack resistance cannot be attributed uniquely to the skill. M2 is constrained by read-only operation. Evaluation definitions and previous results are withheld from evaluation sessions. No subagents or agent teams are used.",
+  "earlyMetadataQualification": "Per-run source/hash fields were added to the harness during activation testing. Earlier run files are retained as captured; unchanged source commit and installed hashes for those runs are documented here."
+}

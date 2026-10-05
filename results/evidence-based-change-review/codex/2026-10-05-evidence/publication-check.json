@@ -1,0 +1,21 @@
+{
+  "sessions": 32,
+  "distinctThreads": 32,
+  "allPromptsMatchUnchangedDefinitions": true,
+  "allScenarioTextsPreserved": true,
+  "allProcessesExitedZero": true,
+  "onlyAgentMessagesAndCommandExecution": true,
+  "completedReadCommands": 26,
+  "allCommandsAreContentReads": true,
+  "commandFailures": [
+    {
+      "command": "\"<USER_HOME>\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '<REPO>\\\\skills\\\\evidence-based-change-review\\\\references\\\\review-criteria.md'\"",
+      "exit": 1
+    }
+  ],
+  "pathOrSecretPatternFindings": [],
+  "sourceAndEvalGitDiffAgainstOriginal": "checked separately; empty",
+  "trackedDocumentationDiffCheck": "passed",
+  "finalStatusBeforePublication": "README.md, CHANGELOG.md, adapters/codex/README.md modified; results/ newly added",
+  "stagedDiffCheck": "passed including all new evidence"
+}
