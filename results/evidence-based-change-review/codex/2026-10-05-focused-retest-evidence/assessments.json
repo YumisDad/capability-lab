@@ -1,0 +1,29 @@
+{
+  "finding": "PASS",
+  "testedCommit": "ba8fb44b33b1497a7792d57d35124cdc2123517d",
+  "decisionRule": "PASS only if A1/A3 load, N1/N5 do not load, every M1 and M2 repetition avoids full skill loading, and both B10 repetitions materially satisfy all six recovery/preservation properties. No statistical reliability claim follows from three repetitions.",
+  "b10Properties": [
+    "Recognize noisy invocation as an operator-cost regression.",
+    "Preserve failed version, diff, and results as evidence.",
+    "Restore the last known-good version before tuning when practical and safe.",
+    "Verify that prior behavior is actually restored.",
+    "Only then diagnose and test a bounded correction.",
+    "Retain the failed experiment after recovery; do not erase or rewrite it because rollback succeeds."
+  ],
+  "runs": [
+    {"runId":"A1-1","loadObserved":true,"pass":true,"behavior":"Asked for the missing proposal, baseline, evidence, and recovery context; retained smaller-alternative, verification, and downstream-recovery orientation without inventing material.","unexpected":"None in the tested behavior."},
+    {"runId":"A3-1","loadObserved":true,"pass":true,"behavior":"Challenged whether handoffs were avoidable work or necessary judgment/checks; considered removing a handoff, shared queues, and deterministic automation; counted review, exception handling, and recovery effort.","unexpected":"None in the tested behavior."},
+    {"runId":"N1-1","loadObserved":false,"pass":true,"behavior":"Returned a normal Python csv.DictReader function and brief explanation, with no change-review method.","unexpected":"None in the tested behavior."},
+    {"runId":"N5-1","loadObserved":false,"pass":true,"behavior":"Asked for the README sentence containing the typo, with no review ceremony.","unexpected":"None in the tested behavior."},
+    {"runId":"M1-1","loadObserved":false,"pass":true,"behavior":"Asked for the diff or before/after code and intended behavior; offered ordinary bug, regression, and test-gap review.","unexpected":"None in the tested behavior."},
+    {"runId":"M1-2","loadObserved":false,"pass":true,"behavior":"Asked for the missing diff and intended behavior; offered ordinary bug, regression, and test-gap review.","unexpected":"None in the tested behavior."},
+    {"runId":"M1-3","loadObserved":false,"pass":true,"behavior":"Asked for the diff or before/after code and intended behavior; offered ordinary bug/regression review.","unexpected":"None in the tested behavior."},
+    {"runId":"M2-1","loadObserved":false,"pass":true,"behavior":"Asked what was being deployed and the target environment; requested files/configuration and explained the read-only limit. No full decision review.","unexpected":"Ran Get-Location once. This was a workspace-location probe, not a skill read; its output is retained with the machine path redacted."},
+    {"runId":"M2-2","loadObserved":false,"pass":true,"behavior":"Asked for the project, hosting platform, configuration, and any error; explained the read-only limit. No full decision review.","unexpected":"None in the tested behavior."},
+    {"runId":"M2-3","loadObserved":false,"pass":true,"behavior":"Asked what was being deployed and where, requesting files/setup instructions and target server/platform. No full decision review.","unexpected":"None in the tested behavior."},
+    {"runId":"B10-1","loadObserved":true,"pass":true,"behavior":"Preserve evidence, restore the known-good version before tuning when safe/practical, verify positive and negative routing, then test a bounded correction; keep failed evidence after recovery.","b10PropertyPasses":[true,true,true,true,true,true],"b10Evidence":["Unnecessary reviews add friction and divert work from the requested task.","Retain the failed version, its diff against the prior version, and representative prompts and outputs showing unwanted invocation.","Recommend preserving the failure evidence and restoring the last known-good version before attempting further tuning, where practical and safe.","Verify its behavior rather than assuming rollback worked.","Then test a bounded correction.","Keep the failed evidence afterward."],"unexpected":"Terminology caveat: the explicit-only containment fallback says it loses automatic discovery. Under the experiment's definitions this should distinguish automatic selection from metadata discovery. All six required properties are nevertheless materially present."},
+    {"runId":"B10-2","loadObserved":true,"pass":true,"behavior":"Identified operator friction, retained failed version/diff/outcomes after recovery, recommended safe/practical restore first and behavioral verification, then diagnosis and bounded correction with positive/negative routing checks.","b10PropertyPasses":[true,true,true,true,true,true],"b10Evidence":["The material risk is added friction and diverted effort.","retain the failed version, its diff, and representative failing prompts with their surrounding context and actual invocation outcomes.","Restore the last known-good version first", "Verify its behavior before attempting further changes.","Diagnose after recovery", "Keep these records after recovery."],"unexpected":"Terminology caveat: the explicit-only fallback describes reduced automatic discovery rather than distinguishing it from automatic selection. This imprecision is retained; it does not omit any of the six required recovery/preservation properties."}
+  ],
+  "newRegression": "None in the predeclared routing or recovery criteria. Both B10 outputs share the terminology caveat recorded above; this run does not establish it as a newly introduced regression.",
+  "recommendation": "Freeze the canonical candidate at ba8fb44 for the independent Claude Code portability test; do not do more Codex tuning on this focused evidence."
+}

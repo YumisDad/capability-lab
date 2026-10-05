@@ -1,0 +1,45 @@
+{
+  "testedCommit": "ba8fb44b33b1497a7792d57d35124cdc2123517d",
+  "hashConvention": "SHA-256 over UTF-8 LF-normalized publication bytes; self-hash omitted.",
+  "files": [
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-focused-retest-evidence/assessments.json",
+      "bytes": 5806,
+      "sha256": "b7f7298555adba9dc84a3e5238064db86d6461eaaa1c3b3d684e49598c1a1a8c"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-focused-retest-evidence/environment.json",
+      "bytes": 1561,
+      "sha256": "73e1e7d9cd41fc944c03d0f9c4721b8b2e2b9706965b316420542ad7c0f39fe3"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-focused-retest-evidence/integrity.json",
+      "bytes": 3505,
+      "sha256": "7d15f778a3be66ec59bbdb8b23c2eac83bc1f2103db271928c87654369f83819"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-focused-retest-evidence/run-focused-batch.cjs",
+      "bytes": 2596,
+      "sha256": "47c0a17f2ab72664db5bcf333a5e5cecfcf2b463fc75b9011c7fa06e00cd4af5"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-focused-retest-evidence/run-focused-case.cjs",
+      "bytes": 4610,
+      "sha256": "54eec5d1a6aae9583bdaf186f8ea4f980f7e829827c85073705497f7f9ddeca7"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-focused-retest-evidence/runs.jsonl",
+      "bytes": 84953,
+      "sha256": "d12a456e9669f545ff13f56ca37fa7d504bff89951484b1cbf091a7f15923a72"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-focused-retest.md",
+      "bytes": 16838,
+      "sha256": "269eabae83a255afb092215b44f36d147c7a5090827be69ce02b94261284abca"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-focused-retest-evidence/file-manifest.json",
+      "self": true
+    }
+  ]
+}

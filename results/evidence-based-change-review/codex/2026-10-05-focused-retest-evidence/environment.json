@@ -1,0 +1,21 @@
+{
+  "runtime": "codex-cli 0.160.0",
+  "configuredModel": "gpt-6-astra",
+  "configuredReasoningEffort": "xhigh",
+  "modelQualification": "Read from CLI configuration; served model not independently reported in execution events. No model override.",
+  "branch": "experiment/evidence-based-change-review",
+  "commit": "ba8fb44b33b1497a7792d57d35124cdc2123517d",
+  "tree": "7fab559ed4ffdf990b0a17502fa7cf757f89b064",
+  "cleanBeforeTesting": true,
+  "mechanism": "Existing Windows junction at .agents/skills/evidence-based-change-review to canonical skills/evidence-based-change-review",
+  "exposureResolvesToCanonical": true,
+  "hashes": {
+    "skills/evidence-based-change-review/SKILL.md": "843888b4f0e4e7734ce62ad7a7aa0d8807b73bdba0fca7557e9657136e318af0",
+    ".agents/skills/evidence-based-change-review/SKILL.md": "843888b4f0e4e7734ce62ad7a7aa0d8807b73bdba0fca7557e9657136e318af0",
+    "skills/evidence-based-change-review/references/review-criteria.md": "ceaa260566f3581d1105a92e057a60cef2fbd3ee8658567320e8d81631e56e6d",
+    "evals/evidence-based-change-review/activation-cases.md": "a0cc12264137b570f1a548071fd79c038ce65c72696664a2f73203d2d5e7cfa0",
+    "evals/evidence-based-change-review/behavior-cases.md": "0bd2b9fbba192037dfc5febe5797225358c1a0df7ef32052be15b363c9aee927",
+    "evals/evidence-based-change-review/expected-properties.md": "6d1dad0bca8bb405fae09a5a18f43233272e5b1f087f46abded8c3d6ac681cdb"
+  },
+  "setupAttempt": "Initial fetch stalled and was canceled before testing. A timeout-bounded fetch succeeded. No runtime case was retried."
+}
