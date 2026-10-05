@@ -141,6 +141,8 @@ For higher-consequence or conflicting-evidence cases, consult `references/review
 
 ## Output
 
+For significant reviews where installation or configured behavior is material, explicitly separate **Installed configuration** from **Observed effectiveness**. Use those exact labels, state the evidence for each, and never infer effectiveness from installation alone.
+
 Use the lightest structure that makes the decision clear. For significant reviews, prefer:
 
 ### Finding
