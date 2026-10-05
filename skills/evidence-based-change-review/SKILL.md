@@ -1,6 +1,6 @@
 ---
 name: evidence-based-change-review
-description: Review proposed technical, workflow, operational, or system changes for objective fit, evidence quality, tradeoffs, failure modes, verification, and rollback. Use before implementing a consequential or non-trivial change. Do not use for ordinary coding, writing, or trivial reversible edits.
+description: Review a concrete proposed technical, workflow, operational, or system change when the user is asking to challenge, audit, assess, or validate the decision using evidence, tradeoffs, failure modes, verification, or rollback. Do not auto-use for ordinary coding, lightweight code review without material system-change context, implementation or deployment help by itself, writing, or trivial reversible edits.
 ---
 
 # Evidence-Based Change Review
@@ -13,7 +13,7 @@ This skill is **review-only by default**. Loading or invoking it does not author
 
 ## Use this skill when
 
-Use it when the user asks to review, challenge, audit, assess, or approve a proposed:
+Use it when the user asks to review, challenge, audit, assess, or validate a concrete proposed:
 
 - technical or software change;
 - workflow or automation change;
@@ -23,22 +23,31 @@ Use it when the user asks to review, challenge, audit, assess, or approve a prop
 - deployment or production change;
 - other non-trivial change where failure, rework, privacy, cost, reliability, or operator burden matters.
 
-Also use it when a requested implementation is consequential enough that a pre-change review is explicitly requested.
+For automatic invocation, require either:
+
+- an explicit request for a decision/change review; or
+- surrounding context that clearly establishes a material proposed change and asks whether it should proceed, is adequately supported, or is acceptably safe/recoverable.
+
+Do **not** treat implementation language alone as a review request. Requests such as “help me deploy this,” “write the code,” or “is this code okay?” without material system-change context should receive the ordinary task response or a lightweight check, not this full review method.
+
+If the user explicitly asks for this review, use it even when the change is small.
 
 ## Do not use this skill when
 
-Do not invoke it merely because a task involves code or systems.
+Do not invoke it merely because a task involves code, deployment, systems, or risk-adjacent terminology.
 
 Examples that normally do **not** require this skill:
 
-- ordinary coding with no requested review;
+- ordinary coding with no requested change review;
+- lightweight code review without evidence of a material system change;
+- implementation or deployment help where the user has not asked for a decision/change review;
 - rewriting prose or email;
 - simple summarization;
 - trivial reversible edits;
 - factual lookup;
 - routine debugging where the user asked for the fix rather than a change review.
 
-If the user directly asks for this review, use it even when the change is small.
+When a non-review implementation request has an obvious consequential hazard, surface only the essential caution needed for safe execution unless the user asks for a broader review.
 
 ## Review workflow
 
@@ -109,6 +118,15 @@ For material changes, state:
 - what evidence would count as success or failure;
 - how an ambiguous result should be handled;
 - how to return to a known-good state when rollback is relevant.
+
+If a newly changed capability, skill, configuration, or workflow shows a material behavioral regression:
+
+1. preserve the failed version, diff, and observed failure as evidence;
+2. restore the last known-good version first when practical and safe;
+3. verify that the known-good behavior is actually restored;
+4. then diagnose the regression and test a bounded correction.
+
+Do not rewrite history or discard the failed result merely because rollback succeeds.
 
 ### 8. Recommend proportionately
 
