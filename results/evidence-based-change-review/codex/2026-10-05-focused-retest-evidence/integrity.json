@@ -1,0 +1,121 @@
+{
+  "testedCommit": "ba8fb44b33b1497a7792d57d35124cdc2123517d",
+  "scopeExact": true,
+  "sessionCount": 12,
+  "distinctThreadCount": 12,
+  "allExitZero": true,
+  "automaticPromptsMatchDefinitions": true,
+  "b10ExactScenarioAndExplicitEnvelope": true,
+  "everyRunAtTestedCommit": true,
+  "everyRunMatchedCoreHashes": true,
+  "sourceReferenceAndEvalHashesUnchanged": true,
+  "junctionStillCanonical": true,
+  "allSkillReadsContainCorrection": true,
+  "observedLoads": [
+    {
+      "runId": "A1-1",
+      "skillRead": true
+    },
+    {
+      "runId": "A3-1",
+      "skillRead": true
+    },
+    {
+      "runId": "N1-1",
+      "skillRead": false
+    },
+    {
+      "runId": "N5-1",
+      "skillRead": false
+    },
+    {
+      "runId": "M1-1",
+      "skillRead": false
+    },
+    {
+      "runId": "M1-2",
+      "skillRead": false
+    },
+    {
+      "runId": "M1-3",
+      "skillRead": false
+    },
+    {
+      "runId": "M2-1",
+      "skillRead": false
+    },
+    {
+      "runId": "M2-2",
+      "skillRead": false
+    },
+    {
+      "runId": "M2-3",
+      "skillRead": false
+    },
+    {
+      "runId": "B10-1",
+      "skillRead": true
+    },
+    {
+      "runId": "B10-2",
+      "skillRead": true
+    }
+  ],
+  "manualLoadAssessmentsMatchTrace": true,
+  "b10SixMaterialPropertiesManualAssessment": [
+    {
+      "runId": "B10-1",
+      "propertyPasses": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "evidenceQuotesPresent": true
+    },
+    {
+      "runId": "B10-2",
+      "propertyPasses": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "evidenceQuotesPresent": true
+    }
+  ],
+  "allDeclaredCriteriaPass": true,
+  "pathOrSecretPatternFindings": [],
+  "executedCommands": [
+    {
+      "runId": "A1-1",
+      "command": "\"<USER_HOME>\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '<REPO>\\\\.agents\\\\skills\\\\evidence-based-change-review\\\\SKILL.md'\"",
+      "exit": 0
+    },
+    {
+      "runId": "A3-1",
+      "command": "\"<USER_HOME>\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '<REPO>\\\\.agents\\\\skills\\\\evidence-based-change-review\\\\SKILL.md'\"",
+      "exit": 0
+    },
+    {
+      "runId": "M2-1",
+      "command": "\"<USER_HOME>\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command Get-Location",
+      "exit": 0
+    },
+    {
+      "runId": "B10-1",
+      "command": "\"<USER_HOME>\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '<REPO>\\\\skills\\\\evidence-based-change-review\\\\SKILL.md'\"",
+      "exit": 0
+    },
+    {
+      "runId": "B10-2",
+      "command": "\"<USER_HOME>\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '<REPO>\\\\skills\\\\evidence-based-change-review\\\\SKILL.md'\"",
+      "exit": 0
+    }
+  ],
+  "limitations": "Semantic B10 scoring is manual against the fixed six properties; mechanical substring checks only verify cited support. Absence of a target read is a complete-trace observation, not a claim about hidden model cognition. Three routing repetitions are not a statistical reliability estimate."
+}

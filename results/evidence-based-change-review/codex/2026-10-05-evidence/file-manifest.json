@@ -1,0 +1,129 @@
+{
+  "hashConvention": "SHA-256 over UTF-8 content with LF line endings, matching publication content; manifest self-hash omitted to avoid recursion.",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1522,
+      "sha256": "cbbd9990f574e647bfbfba430456e04834b804ae667e2091d3fbb1dd2521f2c6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3240,
+      "sha256": "b054896846f95d49a60da0cdc38ce1ad58b1ce6d487a009c8c1743f57a7c4f47"
+    },
+    {
+      "path": "adapters/codex/README.md",
+      "bytes": 3856,
+      "sha256": "e5bc0f2c9d3e9b67fdc21332ee13757d19ce161175143fa1617a701bf919e9ab"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/README.md",
+      "bytes": 3335,
+      "sha256": "37e73065ca60803de21ee6a49fd9f142602c57b04fe10e4f370039f2771e2796"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/baseline-discovery.json",
+      "bytes": 133,
+      "sha256": "002b2fc7f6b96d6598deb8c74e7acafcc0e43e35538782610054cc2b8997cea2"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/baseline-restoration.json",
+      "bytes": 221,
+      "sha256": "b612a35d85a5641418d2e76a3e36bb5ff74b17c625bc2a7a930674befb53ed7e"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/baseline.jsonl",
+      "bytes": 16379,
+      "sha256": "181e4dcc2eef60c124bc4349eb7798ffc0fa937b7f2ea1fe42cba6b183e096d0"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/final-discovery.json",
+      "bytes": 485,
+      "sha256": "79c1c1b3cae78bed8177f6a62d9326ed9f722a785851be72dc37fbd66e02ceae"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/initial-activation.jsonl",
+      "bytes": 92960,
+      "sha256": "749cc24fb5a0b7f77baa9c80058e31bdad732d1dad6b5431f366956fd41084a4"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/initial-behavior.jsonl",
+      "bytes": 157346,
+      "sha256": "84a06459ec18c17734153e705ff4a9844b687684f9a9520087fe4ad52aa50534"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/lifecycle-evidence.json",
+      "bytes": 1202,
+      "sha256": "cd9e8ba3c74f00f97e46ceea486a33c8bec69ff2f48b77d2b2f62fff9a6c341b"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/missing-resource-control-restoration.json",
+      "bytes": 284,
+      "sha256": "ef9ec4794d7b2252476b85438cdc8582b89d032abe0da60f10508380ad55d5d0"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/missing-resource-control.jsonl",
+      "bytes": 14654,
+      "sha256": "17630795a52ffba405b0a4214dd5a1abeb7a469c4a1e4584fc7bcc3ba3752fae"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/missing-resource-restoration.json",
+      "bytes": 245,
+      "sha256": "5ec9e9a3a061d92425b4dc2f5396e4bdf531eedc730bd6a385315a8f4712bd0d"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/missing-resource.jsonl",
+      "bytes": 3711,
+      "sha256": "a4613a485b6cae200042da2495c03203b602ee1634f4d298d5e62b00da319134"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/publication-check.json",
+      "bytes": 931,
+      "sha256": "6926a8db586db1649aa90c04563f15bafa28b97845ce2a509aacd55fb747fed7"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/rollback.jsonl",
+      "bytes": 33986,
+      "sha256": "f16c16ee44dd209e74fa68cd4f3234fe8a00be874184fc3eee3d1d9da09c0bb8"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/run-baseline.ps1",
+      "bytes": 2810,
+      "sha256": "c409b642d486bdbc482d791ded62ac83cebe7a6a08a952cf8fcac77e77ddd781"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/run-batch.cjs",
+      "bytes": 358,
+      "sha256": "f2259d8c7a7f7b57847749319e61c20aa50c7dd4de1a16a54350f3c3038bc5c0"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/run-case.cjs",
+      "bytes": 4119,
+      "sha256": "c7d7196b74e17b87919ecafba109210f8bb924fa7e6c78c7f47041d4538312b6"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/run-missing-resource.ps1",
+      "bytes": 2107,
+      "sha256": "caac799b3e4f54867beba2e3bdac0d6bcf60fe900d32574da1526c02958a7bd5"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/setup-evidence.json",
+      "bytes": 5101,
+      "sha256": "1128268d49c290cf4ed8469a388cb1a8ca9e69b65f11d1391c2583809b3d8934"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/update.jsonl",
+      "bytes": 19780,
+      "sha256": "9b777ef4c8bb3ff8ac3735337fca9e87d1ef870bbc9cfbc0a90eec7ab5928cc7"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05.md",
+      "bytes": 21262,
+      "sha256": "9fed5d1270961d319e3933f0c198ffa26cde607f28ab793a3fe1d91edc837385"
+    },
+    {
+      "path": "results/evidence-based-change-review/codex/2026-10-05-evidence/file-manifest.json",
+      "self": true
+    }
+  ]
+}

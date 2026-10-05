@@ -1,0 +1,7 @@
+{
+  "probe": "final-restored-discovery",
+  "targetSkillInModelVisibleCatalog": true,
+  "entries": [
+    "- evidence-based-change-review: Review proposed technical, workflow, operational, or system changes for objective fit, evidence quality, tradeoffs, failure modes, verification, and rollback. Use before implementing a consequential or non-trivial change. Do not use for ordinary coding, writing, or trivial reversible edits. (file: r4/evidence-based-change-review/SKILL.md)"
+  ]
+}
